@@ -3,13 +3,9 @@ package org.example;
 public class Uppg1_1 {
     static void main() {
 
-    }
 
-    private class Product {
+        Product product1 = new Product("Ägg", 15.90, -10);
 
-        private String name;
-        private double price;
-        private int stockQuantity = 0;
-        //test
+        System.out.println(product1.totalValue());
     }
 }
