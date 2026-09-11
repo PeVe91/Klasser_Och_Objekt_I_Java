@@ -10,5 +10,6 @@ public class Uppg1_1 {
         private String name;
         private double price;
         private int stockQuantity = 0;
+        //test
     }
 }
