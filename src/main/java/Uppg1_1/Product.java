@@ -1,4 +1,4 @@
-package org.example;
+package Uppg1_1;
 
 public class Product {
 
