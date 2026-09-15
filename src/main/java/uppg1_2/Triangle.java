@@ -1,5 +1,4 @@
 package uppg1_2;
-
 //SENASTE KÖRBARA VERSION: Commit e981ae4
 
 public class Triangle {
@@ -71,6 +70,6 @@ public String triangleType(Triangle triangle) {
     //--------------------------------------------------------------
 }
 
-void main() {
-}
+
+
 
