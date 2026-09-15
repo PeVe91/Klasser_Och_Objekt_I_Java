@@ -20,13 +20,14 @@ public class Triangle {
     }
 
 
-
     public double getSideA() {
         return sideA;
     }
+
     public double getSideB() {
         return sideB;
     }
+
     public double getSideC() {
         return sideC;
     }
@@ -35,39 +36,42 @@ public class Triangle {
     public void setSideA(double sideA) {
         this.sideA = sideA;
     }
+
     public void setSideB(double sideB) {
         this.sideB = sideB;
     }
+
     public void setSideC(double sideC) {
         this.sideC = sideC;
     }
-}
 
 
-
-//--------------------------------------------------------------
-public boolean isValidTriangle(Triangle t) {
-    return (t.sideA + t.sideB > t.sideC) &&
-            (t.sideA + t.sideC > t.sideB) &&
-            (t.sideB + t.sideC > t.sideA);
-}
-public double perimeter(Triangle t) {
-    return t.sideA + t.sideB + t.sideC;
-}
-public String triangleType(Triangle triangle) {
-    String result;
-    double a = triangle.getSideA();
-    double b = triangle.getSideB();
-    double c = triangle.getSideC();
-
-    if (a == b && b == c)
-        result = "Equilateral Triangle";
-    else if (a == b || a == c || b == c)
-        result = "Isosceles Triangle";
-    else
-        result = "Scalene Triangle";
-    return result;
     //--------------------------------------------------------------
+    public boolean isValidTriangle(Triangle t) {
+        return (t.sideA + t.sideB > t.sideC) &&
+                (t.sideA + t.sideC > t.sideB) &&
+                (t.sideB + t.sideC > t.sideA);
+    }
+
+    public double perimeter(Triangle t) {
+        return t.sideA + t.sideB + t.sideC;
+    }
+
+    public String triangleType(Triangle triangle) {
+        String result;
+        double a = triangle.getSideA();
+        double b = triangle.getSideB();
+        double c = triangle.getSideC();
+
+        if (a == b && b == c)
+            result = "Equilateral Triangle";
+        else if (a == b || a == c || b == c)
+            result = "Isosceles Triangle";
+        else
+            result = "Scalene Triangle";
+        return result;
+        //--------------------------------------------------------------
+    }
 }
 
 
