@@ -1,6 +1,6 @@
-package Uppg1_1;
+package org.example;
 
-public class Main {
+public class Uppg1_1 {
     static void main() {
 
 
